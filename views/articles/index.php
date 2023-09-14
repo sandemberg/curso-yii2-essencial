@@ -3,8 +3,10 @@
 ?>
 <h1>articles/index</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
-// criando com ./yii gii/controller --controllerClass=app\\controllers\\ArticlesController
+<p> ID <?= $id ?></p>
+
+<?php if ($crypt):  ?>
+    <p> ID Crypt: <?= sha1($id) ?> </p>
+<?php endif; ?>
+
+criando com ./yii gii/controller --controllerClass=app\\controllers\\ArticlesController
